@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Client Account Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+
+
+<body>
+  <!-- Your content goes here -->
+  <header class="bg-white p-4 flex justify-between items-center border-tl-3xl">
+
+    <div class="ml-20 flex justify-between  items-center">
+      <a href="#"><img src="img/logo 1.png" alt="Logo" class="h-8" /></a>
+      <div class="d-flex ">
+
+        <a href="#" class="ml-4 text-gray-600 hover:text-green-500">Home</a>
+        <a href="#" class="ml-4 text-gray-600 hover:text-green-500">Sobre nós</a>
+        <a href="#" class="ml-4 text-gray-600 hover:text-green-500">Contato</a>
+
+
+      </div>
+    </div>
+
+    <div class="flex justify-between items-center mr-20">
+
+      <div class="form-check form-switch ">
+        <input class="form-check-input bg-gray-300 " type="checkbox" id="mySwitch" name="darkmode" value="yes" checked>
+
+      </div>
+
+      <button class="ml-4 bg-gray-900 text-white font-bold py-2 px-4 rounded">
+        Área do Cliente
+      </button>
+
+    </div>
+  </header>
+
+  <div class="p-4 ml-28 ">
+
+    <div class="border-b border-gray-200 dark:border-gray-700">
+      <ul class="flex flex-wrap -mb-px font-medium text-center text-gray-500 dark:text-gray-400 text-xl gap-4">
+        <li class="me-2">
+          <a href="#" id="profile"
+            class="tab-bar inline-flex gap-3 items-center justify-center p-4 border-b-2 border-red-500 rounded-t-lg text-black hover:text-black hover:border-red-500 hover:border-b-2 dark:hover:text-gray-300 group">
+            <div class="w-10 h-10 flex items-center justify-center rounded-full bg-green-100">
+              <img
+                class=" text-gray-400 group-hover:text-gray-500 dark:text-gray-500 w-3 h-3 dark:group-hover:text-gray-300"
+                src="img/addr.svg"></img>
+            </div>Profile
+          </a>
+        </li>
+        <li class="me-2">
+          <a href="#" id="address"
+            class="tab-bar inline-flex gap-3 items-center justify-center p-4  rounded-t-lg hover:text-black hover:border-red-500 hover:border-b-2 dark:hover:text-gray-300 group">
+
+            <div class="w-10 h-10 flex items-center justify-center rounded-full bg-green-100">
+              <img
+                class=" text-gray-400 group-hover:text-gray-500 dark:text-gray-500 w-3 h-3 dark:group-hover:text-gray-300"
+                src="img/addr.svg"></img>
+            </div>
+            Endereços
+          </a>
+        </li>
+        <li class="me-2">
+          <a href="#" id="lock"
+            class="tab-bar inline-flex gap-3 items-center justify-center p-4  rounded-t-lg hover:text-black hover:border-red-500 hover:border-b-2 dark:hover:text-gray-300 group">
+            <div class="w-10 h-10 flex items-center justify-center rounded-full bg-green-100">
+              <img
+                class=" text-gray-400 group-hover:text-gray-500 dark:text-gray-500 w-3 h-3 dark:group-hover:text-gray-300"
+                src="img/lock.svg" alt="">
+            </div>Segurança
+          </a>
+        </li>
+        <li class="me-2">
+          <a href="#" id="bill"
+            class="tab-bar inline-flex gap-3 items-center justify-center p-4  rounded-t-lg hover:text-black hover:border-red-500 hover:border-b-2 dark:hover:text-gray-300 group">
+            <div class="w-10 h-10 flex items-center justify-center rounded-full bg-green-100">
+              <!-- Your icon content here -->
+              <img style="width: 12px;"
+                class=" text-gray-400 group-hover:text-gray-500 dark:text-gray-500 w-3 h-3 dark:group-hover:text-gray-300"
+                src="img/bill.svg" alt="">
+            </div>Meus pedidos
+
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!--     tab contents        -->
+    <div class="p-6 bg-white mt-2  rounded-b-md shadow-md tab-content" id="profile_content">
+      <div class="p-4 w-[569px]">
+        <div class="text-black font-bold leading-10 text-4xl">Detalhes do perfil</div>
+        <label for="" class="block font-medium text-gray-700 text-lg mt-2 mb-2">Lorem ipsum dolor sit amet consectetur
+          faucibus sit adip iscing donec et.</label>
+        <div class="grid grid-cols-2 gap-4 w-1/2 mt-14 ">
+
+          <div>
+            <label for="full-name" class="block font-medium text-gray-700 mt-2 mb-2">Nome Completo</label>
+            <input type="text" id="full-name" class="w-full border rounded-md p-2" value="Sabrina Fujii">
+          </div>
+          <div>
+            <label for="cpf" class="block font-medium text-gray-700 mt-2 mb-2">CPF</label>
+            <input type="text" id="cpf" class="w-full border rounded-md p-2" value="421.928.925-84">
+          </div>
+          <div>
+            <label for="email" class="block font-medium text-gray-700 mt-2 mb-2">E-mail</label>
+            <input type="email" id="email" class="w-full border rounded-md p-2" value="sabrinafujii04@gmail.com">
+          </div>
+          <div>
+            <label for="phone" class="block font-medium text-gray-700 mt-2 mb-2">Celular</label>
+            <input type="text" id="phone" class="w-full border rounded-md p-2" value="+55 11 99350-0377">
+          </div>
+        </div>
+        <div class="flex mt-14">
+          <button
+            class="bg-green-300 hover:bg-green-400 text-white font-bold w-32 h-14 py-2 px-4 rounded mr-4 text-lg">Cancelar</button>
+          <button
+            class="bg-green-700 hover:bg-green-800 text-white font-bold w-32 h-14 py-2 px-4 rounded">Salvar</button>
+        </div>
+        <label for="" class="text-red-600 mt-14 text-lg">Sair da conta</label>
+      </div>
+    </div>
+
+    <!--     tab contents        -->
+    <div class="p-6 bg-white mt-2  rounded-b-md shadow-md tab-content" id="addr_content" style="display: none;">
+      <div class="p-4 w-[569px]">
+        <div class="text-black font-bold leading-10 text-4xl">Endereços</div>
+        <label for="" class="block font-medium text-gray-700 text-lg mt-2 mb-2">Lorem ipsum dolor sit amet consectetur
+          faucibus sit adip iscing donec et.</label>
+        <div class="flex gap-5">
+          <div class="grid grid-cols-2 gap-4 w-1/2 mt-14 p-4 rounded-md bg-green-100">
+            <div>
+              <label for="full-name" class="block font-medium text-gray-700 mt-2 mb-2">Nome Completo</label>
+              <input type="text" id="full-name" class="w-full border rounded-md p-2" value="Sabrina Fujii">
+            </div>
+            <div>
+              <label for="cpf" class="block font-medium text-gray-700 mt-2 mb-2">CPF</label>
+              <input type="text" id="cpf" class="w-full border rounded-md p-2" value="421.928.925-84">
+            </div>
+            <div>
+              <label for="email" class="block font-medium text-gray-700 mt-2 mb-2">E-mail</label>
+              <input type="email" id="email" class="w-full border rounded-md p-2" value="sabrinafujii04@gmail.com">
+            </div>
+            <div>
+              <label for="phone" class="block font-medium text-gray-700 mt-2 mb-2">Celular</label>
+              <input type="text" id="phone" class="w-full border rounded-md p-2" value="+55 11 99350-0377">
+            </div>
+          </div>
+          <div class="gap-4 w-1/2 mt-14 h-full">
+            <div class="w-full">
+              <div id="fileButton"
+                class="p-28 rounded-md bg-green-100 h-full text-black cursor-pointer flex items-center justify-center text-center">
+                <img src="img/add.svg" alt="" class="w-6 mr-2">
+                <span>Adicionar endereço</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex mt-14">
+          <button
+            class="bg-green-300 hover:bg-green-400 text-white font-bold w-32 h-14 py-2 px-4 rounded mr-4 text-lg">Cancelar</button>
+          <button
+            class="bg-green-700 hover:bg-green-800 text-white font-bold w-32 h-14 py-2 px-4 rounded">Salvar</button>
+        </div>
+      </div>
+    </div>
+
+    <!--     tab contents        -->
+    <div class="p-6 bg-white mt-2  rounded-b-md shadow-md tab-content" id="lock_content" style="display: none;">
+      <div class="p-4 w-[569px]">
+        <div class="text-black font-bold leading-10 text-4xl">Alterar senha</div>
+        <label for="" class="block font-medium text-gray-700 text-lg mt-2 mb-2">Lorem ipsum dolor sit amet consectetur
+          faucibus sit adip iscing donec et.</label>
+        <div class="grid grid-cols-2 gap-4 w-1/2 mt-14 ">
+          <div>
+            <div>
+              <label for="present-password" class="block font-medium text-gray-700 mt-2 mb-2">Senha atual</label>
+              <input type="password" id="full-name" class="w-full border rounded-md p-2" value="">
+            </div>
+            <div>
+              <label for="new-password" class="block font-medium text-gray-700 mt-2 mb-2">Nova senha</label>
+              <input type="password" id="email" class="w-full border rounded-md p-2" value="">
+            </div>
+            <div>
+              <label for="confirm-password" class="block font-medium text-gray-700 mt-2 mb-2">Confirmar senha</label>
+              <input type="password" id="phone" class="w-full border rounded-md p-2" value="">
+            </div>
+            <div>
+              <a href="#" id="profile"
+                class="inline-flex gap-3 items-center justify-center pl-4 pr-4 pt-2 pb-2 mt-4 w-full text-2xl border-1 border-black rounded-lg">
+                <img
+                  class=" text-gray-400 group-hover:text-gray-500 dark:text-gray-500 w-6 h-6 dark:group-hover:text-gray-300"
+                  src="img/google.svg"></img>
+                Entrar com Google
+              </a>
+            </div>
+            <div>
+              <a href="#" id="profile"
+                class="inline-flex gap-3 items-center justify-center pl-4 pr-4 pt-2 pb-2 mt-4 w-full text-2xl border-1 border-black rounded-lg">
+                <img
+                  class=" text-gray-400 group-hover:text-gray-500 dark:text-gray-500 w-6 h-6 dark:group-hover:text-gray-300"
+                  src="img/facebook.svg"></img>
+                Entrar com Facebook
+              </a>
+            </div>
+          </div>
+          <div class="mt-6 justify-center align-middle text-lg w-96 h-60 ml-11 bg-gray-100 rounded-md p-3">
+            <p class="font-medium text-gray-700 text-bold">Password Requirements:</p>
+            <ul class="list-disc pl-4 mt-2 ml-3 leading-7">
+              <li class="leading-8">Minimum 8 characters long - the more, the better</li>
+              <li class="leading-8">At least one lowercase character</li>
+              <li class="leading-8">At least one number, symbol, or whitespace character</li>
+            </ul>
+          </div>
+
+
+        </div>
+        <div class="flex mt-14">
+          <button
+            class="bg-white hover:bg-green-400 text-black font-bold w-32 h-14 py-2 px-4 border-1 border-gray-400 rounded mr-4 text-lg">Cancelar</button>
+          <button
+            class="bg-green-300 hover:bg-green-400 text-black font-bold w-32 h-14 py-2 px-4 rounded">Salvar</button>
+        </div>
+      </div>
+      <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+    </div>
+
+    <!--     tab contents        -->
+    <div class="p-6 bg-white mt-2  rounded-b-md shadow-md  tab-content" id="bill_content" style="display: none;">
+      <div class="p-4 w-[569px]  shadow-md sm:rounded-lg rounded-lg bg-gray-100 mb-6">
+
+        <div class="flex items-center justify-between mb-6">
+          <div class="text-black font-bold leading-10 text-4xl">Alterar senha</div>
+          <div class="relative right-0">
+            <div class="absolute inset-y-0 rtl:inset-r-0 end-0 flex items-center pe-3 pointer-events-none">
+              <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+              </svg>
+            </div>
+            <input type="text" id="table-search-users"
+              class="block p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg w-80 bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="Search for users">
+          </div>
+        </div>
+        <div class="relative overflow-x-auto  bg-gray-100">
+          <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+            <thead class="border-b border-gray-400 text-xs text-gray-700 uppercase dark:bg-gray-700 dark:text-gray-400">
+              <tr>
+
+                <th scope="col" class="px-6 py-3">
+                  <div class="flex items-center">
+                    ID <i class="fas fa-chevron-down text-gray-500 text-sm items-center mt-1 ml-3"></i>
+                  </div>
+                </th>
+                <th scope="col" class="px-6 py-3">
+                  Client <i class="fas fa-chevron-down text-gray-500 text-sm items-center mt-1 ml-3"></i>
+                </th>
+                <th scope="col" class="px-6 py-3">
+                  Servico <i class="fas fa-chevron-down text-gray-500 text-sm items-center mt-1 ml-3"></i>
+                </th>
+                <th scope="col" class="px-6 py-3">
+                  Data do pedido <i class="fas fa-chevron-down text-gray-500 text-sm items-center mt-1 ml-3"></i>
+                </th>
+                <th scope="col" class="px-6 py-3">
+                  Status <i class="fas fa-chevron-down text-gray-500 text-sm items-center mt-1 ml-3"></i>
+                </th>
+                <th scope="col" class="px-6 py-3">
+                  Ações
+                </th>
+              </tr>
+            </thead>
+            <tbody class="text-sm">
+              <tr class=" dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-600 text-black">
+                <td class="px-6 py-4">
+                  123
+                </td>
+                <td class="px-6 py-4">
+                  Nome Sobrenome
+                </td>
+                <td class="px-6 py-4">
+                  Impressão 3D
+                </td>
+                <td class="px-6 py-4">
+                  15 jan 2024
+                </td>
+                <td class="px-6 py-4">
+                  <div class="flex items-center">
+                    <i class="fas fa-check-circle text-green-500 text-lg mr-2 hover:cursor-pointer"></i>Concluído
+                  </div>
+                </td>
+                <td class="px-6 py-4">
+                  <div class="flex items-center text-red-400">
+                    <i class="fas fa-edit text-gray-500 mr-2 text-xl hover:cursor-pointer"></i>
+                    <i class="fas fa-trash-alt text-gray-500 mr-2 text-xl hover:cursor-pointer"></i>
+                    <!-- View Icon -->
+                    <i class="fas fa-eye text-gray-500 text-xl mr-2 hover:cursor-pointer"></i>
+                    comprar novamente
+                    <!-- Delete Icon -->
+
+                  </div>
+                </td>
+
+              </tr>
+              <tr class=" dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-600 text-black">
+                <td class="px-6 py-4">
+                  123
+                </td>
+                <td class="px-6 py-4">
+                  Nome Sobrenome
+                </td>
+                <td class="px-6 py-4">
+                  Impressão 3D
+                </td>
+                <td class="px-6 py-4">
+                  15 jan 2024
+                </td>
+                <td class="px-6 py-4">
+                  <div class="flex items-center">
+                    <i class="far fa-times-circle text-green-500 text-lg mr-2 hover:cursor-pointer"></i>Concluído
+                  </div>
+                </td>
+                <td class="px-6 py-4">
+                  <div class="flex items-center text-red-400">
+                    <i class="fas fa-edit text-gray-500 mr-2 text-xl hover:cursor-pointer"></i>
+                    <i class="fas fa-trash-alt text-gray-500 mr-2 text-xl hover:cursor-pointer"></i>
+                    <!-- View Icon -->
+                    <i class="fas fa-eye text-gray-500 text-xl mr-2 hover:cursor-pointer"></i>
+                    comprar novamente
+                    <!-- Delete Icon -->
+
+                  </div>
+                </td>
+
+              </tr>
+              <tr class=" dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-600 text-black">
+                <td class="px-6 py-4">
+                  123
+                </td>
+                <td class="px-6 py-4">
+                  Nome Sobrenome
+                </td>
+                <td class="px-6 py-4">
+                  Impressão 3D
+                </td>
+                <td class="px-6 py-4">
+                  15 jan 2024
+                </td>
+                <td class="px-6 py-4">
+                  <div class="flex items-center">
+                    <i class="fas fa-check-circle text-green-500 text-lg mr-2 hover:cursor-pointer"></i>Concluído
+                  </div>
+                </td>
+                <td class="px-6 py-4">
+                  <div class="flex items-center text-red-400">
+                    <i class="fas fa-edit text-gray-500 mr-2 text-xl hover:cursor-pointer"></i>
+                    <i class="fas fa-trash-alt text-gray-500 mr-2 text-xl hover:cursor-pointer"></i>
+                    <!-- View Icon -->
+                    <i class="fas fa-eye text-gray-500 text-xl mr-2 hover:cursor-pointer"></i>
+                    comprar novamente
+                    <!-- Delete Icon -->
+
+                  </div>
+                </td>
+
+              </tr>
+              <tr class=" dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-600 text-black">
+                <td class="px-6 py-4">
+                  123
+                </td>
+                <td class="px-6 py-4">
+                  Nome Sobrenome
+                </td>
+                <td class="px-6 py-4">
+                  Impressão 3D
+                </td>
+                <td class="px-6 py-4">
+                  15 jan 2024
+                </td>
+                <td class="px-6 py-4">
+                  <div class="flex items-center">
+                    <i class="far fa-times-circle text-green-500 text-lg mr-2 hover:cursor-pointer"></i>Concluído
+                  </div>
+                </td>
+                <td class="px-6 py-4">
+                  <div class="flex items-center text-red-400">
+                    <i class="fas fa-edit text-gray-500 mr-2 text-xl hover:cursor-pointer"></i>
+                    <i class="fas fa-trash-alt text-gray-500 mr-2 text-xl hover:cursor-pointer"></i>
+                    <!-- View Icon -->
+                    <i class="fas fa-eye text-gray-500 text-xl mr-2 hover:cursor-pointer"></i>
+                    comprar novamente
+                    <!-- Delete Icon -->
+
+                  </div>
+                </td>
+
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </div>
+
+
+    <footer class="bg-green-500 py-4 d-flex items-center justify-between rounded-bl-3xl rounded-br-3xl">
+      <div class="ml-20">
+        <img src="img/logo 1 (1).png" class="h-8" />
+      </div>
+      <div class="flex justify-between items-center max-w-6xl mx-auto px-4">
+        <!-- Left side (brand icon and copyright notice) -->
+
+        <div class="flex items-center">
+          <!-- Brand icon (Replace `fa-code` with the actual icon class you want to use) -->
+          <!-- <i class="fas fa-code text-white text-2xl mr-2"></i> -->
+          <span class="text-white">&copy; 2022 Bootstrapious. All rights reserved. Terms and sales policy</span>
+        </div>
+
+        <!-- Right side (social icons) -->
+        <!-- Replace `fa-facebook-f` and `fa-twitter` with the actual social media icon classes you want to use -->
+
+      </div>
+
+      <div class="flex items-center mr-20">
+        <a href="#" class="text-white text-2xl mx-2">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="text-white text-2xl mx-2">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </div>
+    </footer>
+
+
+</body>
+<script>
+  $(document).ready(function () {
+    function remove_and_add(id) {
+      $('.tab-bar').removeClass('border-b-2 border-red-500 rounded-t-lg text-black');
+      $(`#${id}`).addClass('border-b-2 border-red-500 rounded-t-lg text-black');
+    }
+    $('#profile').click(function () {
+      // Hide all tab contents
+      $('.tab-content').hide();
+      remove_and_add('profile');
+      // Show the profile content
+      $('#profile_content').show();
+    });
+    $('#address').click(function () {
+      // Hide all tab contents
+      $('.tab-content').hide();
+      remove_and_add('address');
+
+      $('#addr_content').show();
+    });
+    $('#bill').click(function () {
+      // Hide all tab contents
+      $('.tab-content').hide();
+      remove_and_add('bill');
+
+      $('#bill_content').show();
+    });
+    $('#lock').click(function () {
+      // Hide all tab contents
+      $('.tab-content').hide();
+      remove_and_add('lock');
+
+      $('#lock_content').show();
+    });
+
+  });
+
+</script>
+
+</html>
